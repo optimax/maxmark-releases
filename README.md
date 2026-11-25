@@ -5,7 +5,9 @@ word processor edits a document: you see headings, lists, links, tables and pict
 look, and you type, select and format as you would in a word processor, while the file stays
 plain Markdown that any other program reads.
 
-![MaxMark editing a Markdown document](screenshot.png)
+![MaxMark in its light theme, editing a Markdown document](screenshot-light.png)
+
+![MaxMark in its dark theme, editing the same document](screenshot.png)
 
 This repository holds MaxMark's **installers**, and nothing else. Download the newest from
 **[Releases](https://github.com/optimax/maxmark-releases/releases/latest)**.
