@@ -1,6 +1,6 @@
 # MaxMark
 
-**MaxMark** is a WYSIWYG Markdown editor for Windows, by Optimax. It edits Markdown the way a
+**MaxMark** is a WYSIWYG Markdown editor for Windows/.NET, by Optimax. It edits Markdown the way a
 word processor edits a document: you see headings, lists, links, tables and pictures as they
 look, and you type, select and format as you would in a word processor, while the file stays
 plain Markdown that any other program reads.
