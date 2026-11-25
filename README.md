@@ -39,11 +39,19 @@ an e-book, and code highlighted in its language's colors are Pro's.
 
 | File | What it is |
 | --- | --- |
-| `MaxMarkSetup.msi` | The installer for 64-bit Windows: most computers |
-| `MaxMarkSetup-x86.msi` | The installer for 32-bit Windows |
+| `MaxMarkSetup.msi` | The installer for 64-bit Windows, most computers: includes .NET |
+| `MaxMarkSetup-x86.msi` | The installer for 32-bit Windows: includes .NET |
+| `MaxMarkSetup-arm64.msi` | The installer for Windows on ARM: includes .NET |
+| `MaxMarkSetup-NoDotNet.msi` | For 64-bit Windows that has the .NET 10 Desktop Runtime: much smaller |
+| `MaxMarkSetup-x86-NoDotNet.msi` | For 32-bit Windows that has the .NET 10 Desktop Runtime |
+| `MaxMarkSetup-arm64-NoDotNet.msi` | For Windows on ARM that has the .NET 10 Desktop Runtime |
 | `maxmark.json` | Not to download: what MaxMark reads to find out about a newer version |
 
-MaxMark runs on Windows 10 and 11, and brings its own .NET: there is nothing else to install.
+MaxMark runs on Windows 10 and 11, on .NET 10. The installers that include .NET need nothing
+else. The ones without it (`-NoDotNet`) are for a computer that already has the
+[.NET 10 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/10.0): where it is
+missing, they stop before installing anything and say so. When MaxMark updates itself, it
+downloads the smallest installer that works on your computer.
 
 The installers are not signed yet, so Windows asks *"Do you want to allow this app from an
 unknown publisher to make changes to your device?"* when one runs. Each installer's SHA-256
